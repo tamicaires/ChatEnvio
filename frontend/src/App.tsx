@@ -14,7 +14,7 @@ function App(): JSX.Element {
           <BrowserRouter>
             <Routes>
               <Route
-                path='/'
+                path='/login'
                 element={
                   <LoginLayout>
                     <Login />
@@ -30,7 +30,7 @@ function App(): JSX.Element {
                 }
               />
               <Route
-                path='/chatroom'
+                path='/'
                 element={
                   <LoginLayout>
                     <Chat />
