@@ -48,14 +48,14 @@ app.get("/message", (_: Request, res: Response) => {
    * Essa implementação proporcionará uma experiência de visualização clara e 
    * facilitará a interação com as mensagens disponíveis.
   */
-  const sortedMessages = messages.sort((a, b) => {
-    return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
-  });
 
-  return res.json(sortedMessages);
+
 });
 
+
+
 app.post("/message", (req: Request, res: Response) => {
+  console.log('back', req.body)
   const body = req.body;
   const message = {
     ...body,
